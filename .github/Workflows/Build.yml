@@ -1,5 +1,9 @@
 name: Build CI
 
+runs:
+  using: 'node24'env:
+  main: 'main.js'env:
+  
 on:
   push:
   workflow_dispatch:
