@@ -3,7 +3,11 @@ name: Build CI
 on:
   push:
   workflow_dispatch:
-
+  
+runs:
+  using: 'node24'
+  main: 'main.js'
+    
 jobs:
   build:
     runs-on: macos-latest
